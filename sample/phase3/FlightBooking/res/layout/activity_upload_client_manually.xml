@@ -1,0 +1,95 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="b07.example.flightbooking.UploadClientManuallyActivity" >
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_client_manually_msg" />
+    
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/email_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"/>
+    
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"/>
+    
+    <EditText
+        android:id="@+id/firstname_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/firstname"/>
+    
+    <EditText
+        android:id="@+id/lastname_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lastname"/>
+    
+    <EditText
+        android:id="@+id/address_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/address"/>
+    
+    <EditText
+        android:id="@+id/credit_card_number_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/creditCardNumber"
+        android:inputType="numberSigned"/>
+    
+    <EditText
+        android:id="@+id/expiry_date_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/expiryDate"
+        android:inputType="date"/>
+    
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/register_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="uploadClient"
+        android:text="@string/upload_button" />
+    
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/back_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goBack"
+        android:text="@string/back" />
+    
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="backToMenu"
+        android:text="@string/backToMenu" />
+    
+    <TextView
+        android:id="@+id/controlling_client_text_view"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

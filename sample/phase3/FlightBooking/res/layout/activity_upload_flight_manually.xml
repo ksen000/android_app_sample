@@ -1,0 +1,100 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="b07.example.flightbooking.UploadFlightManuallyActivity" >
+    
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_flight_manually_msg" />
+    
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/flight_number_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/flight_number_edit_text"/>
+    
+    <EditText
+        android:id="@+id/departure_datetime_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dept_datetime_edit_text"/>
+    
+    <EditText
+        android:id="@+id/arrival_datetime_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/arrival_datetime_edit_text" />
+    
+    <EditText
+        android:id="@+id/airline_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/airline_edit_text" />
+    
+    <EditText
+        android:id="@+id/origin_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/origin_edit_text" />
+    
+    <EditText
+        android:id="@+id/destination_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/destination_edit_text" />
+    
+    <EditText
+        android:id="@+id/price_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/price_edit_text"
+        android:inputType="numberSigned" />
+    
+    <EditText
+        android:id="@+id/capacity_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/capacity_edit_text"
+        android:inputType="numberSigned" />
+    
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/upload_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="uploadFlight"
+        android:text="@string/upload_button" />
+    
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/back_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goBack"
+        android:text="@string/back" />
+    
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="backToMenu"
+        android:text="@string/backToMenu" />
+    
+    <TextView
+        android:id="@+id/controlling_client_text_view"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

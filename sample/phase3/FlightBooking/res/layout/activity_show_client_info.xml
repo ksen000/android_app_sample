@@ -1,0 +1,119 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="b07.example.flightbooking.ShowClientInfoActivity" >
+
+    <TextView
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lastname_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/firstname_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/email_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/address_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ccnumber_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/expiry_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="controlThisClient"
+        android:text="@string/control_this_client" />
+    
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="editClient"
+        android:text="@string/editClient" />
+    
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addItinerary"
+        android:text="@string/addItinerary" />
+    
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="viewBookedItinerary"
+        android:text="@string/viewBookedItinerary" />
+    
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="viewShoppingCart"
+        android:text="@string/viewShoppingCart" />
+    
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="viewBookedFlight"
+        android:text="@string/viewBookedFlight" />
+    
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/back_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goBack"
+        android:text="@string/back" />
+    
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="backToMenu"
+        android:text="@string/backToMenu" />
+    
+    <TextView
+        android:id="@+id/controlling_client_text_view"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
